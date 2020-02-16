@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/samples"
+        android:title="Samples"
+        android:icon="@drawable/ic_action_sample"/>
+
+    <item
+        android:id="@+id/lighting"
+        android:title="Lighting"
+        android:icon="@drawable/ic_action_lighting"/>
+
+    <item
+        android:id="@+id/shaders"
+        android:title="Shading"
+        android:icon="@drawable/ic_action_shading"/>
+    />
+
+    <!--now add some icons in drawable-->
+</menu>

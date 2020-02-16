@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Arnold 4 : Guide</string>
+
+
+    <string name="home_fragment">Home fragment</string>
+    <string name="favourite_fragment">Favourite fragment</string>
+    <string name="profile_fragment">Profile fragment</string>
+    <string name="camAAText">Supersampling control over the number of rays per pixel that will be 
+        traced from the camera. The higher the number of samples, the better the anti-aliasing quality, 
+        and the longer the render times. The exact number of rays per pixel is the square of this value. 
+        For example, a Camera (AA) samples value of 3 means 3x3 = 9-pixel samples. In practice, you may 
+        consider using a value of 4 for medium quality, 8 for high quality, and (rarely) 16 for super-high 
+        quality. This control acts as a global multiplier of all the different rays, multiplying the number 
+        of Diffuse and Specular rays. Motion blur and depth of field quality can only be improved by 
+        increasing Camera (AA) samples.
+        \n
+        \n
+        The Diffuse Controls the number of rays fired when computing the reflected indirect-radiance
+        integrated over the hemisphere. The exact number of hemispherical rays is the square of this value.
+        Increase this number to reduce the indirect diffuse noise. Remember that the diffuse sampling is
+        done for each Camera (AA) sample, so high values for both Camera (AA) samples and Diffuse samples
+        will tend to result in slow renders.
+        \n
+        \n
+        When Diffuse samples are more than zero, camera rays intersecting with diffuse surfaces fire
+        indirect diffuse rays. The rays are fired in random directions within a hemispherical spread.
+        Noise is introduced when there are insufficient rays to resolve the range of values from the environment.
+        Increasing the number of Diffuse samples will increase the number of diffuse rays fired from a point
+    </string>
+
+    <string name="lightingText">There are two ways to use an Arnold area light in MtoA. You can either
+        add a regular Maya Area Light, in which case Arnold will assume a rectangle/quad source or
+        if you require a different shape, you can alter the light node type to be an Ai Area Light.
+        Note that Arnold will render assuming that the area light is a Quad. If you need a different shape,
+        you will need to select Ai Area Light as the node type instead. The Ai Area Light is a custom
+        Arnold light that enables the user to create realistic lighting effects based on different preset
+        shapes such as Disk and Cylinder (as well as Quad)
+        \n
+        \n
+        Note that if you just use a regular Maya Area Light instead of the Arnold Ai Area Light, you will have
+        all the control attributes under the Arnold tab that you would for an Ai Area Light if you selected
+        the Quad shape (apart from the Light Shape attribute). See the Quad Light Shape topic for details
+        of how the Arnold Ai Area Light works with the Quad shape selected</string>
+
+    <string name="shadingText">Displacement maps can be an excellent tool for adding surface detail that
+        would take far too long using regular modeling methods. Displacement mapping differs from bump
+        mapping in that it alters the geometry, and therefore will have a correct silhouette, and
+        self-shadowing effects. Depending on the type of input, the displacement can occur in two ways:
+        Float, RGB and RGBA inputs will displace along the normal while a vector input will displace along the vector.
+        The example above shows how a simple plane, with the addition of a displacement map, can produce an
+        interesting looking simple scene.
+        \n
+        \n
+        You should ensure that your base mesh geometry has a sufficient number of polygons otherwise subtle
+        differences can occur between the displaced low-resolution geometry and the high-resolution
+        mesh from which it was generated.
+        \n
+        \n
+        Changing the Subdivision Type to either Catclark or Linear subdivision rules and increasing the iterations will improve the displacement quality. In this example, the Subdivision Iterations have been increased to 8.
+        You must be careful when increasing the number of subdivision iterations (each iteration quadruples the geometry).
+        This subdivision happens at render time, whenever a ray hits the bound box of the object.
+        This is a better choice compared to increasing the subdivisions of the mesh
+        within the DCC software (which will send the tessellated geometry to the renderer).</string>
+
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/whiteColor"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/SampleAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samples"
+        android:textColor="@color/colorPrimary"
+        android:textSize="38sp" />
+
+
+    <TextView
+        android:id="@+id/cameraAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SampleAA"
+        android:layout_marginTop="20dp"
+        android:text="Camera AA"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp" />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cameraAA"
+        android:paddingTop="20dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/CamAAText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:scrollbars="vertical"
+            android:text="@string/camAAText"
+            android:textColor="#2E1818"
+            android:textSize="23sp" />
+    </ScrollView>
+
+
+
+</RelativeLayout>

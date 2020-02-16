@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "878919117244",
+    "firebase_url": "https://arnoldguide-53372.firebaseio.com",
+    "project_id": "arnoldguide-53372",
+    "storage_bucket": "arnoldguide-53372.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878919117244:android:953b554d795ec5568b23b9",
+        "android_client_info": {
+          "package_name": "com.jordanm.arnoldguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878919117244-583po68pg7189um75p932g8s8sfcs4tm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jordanm.arnoldguide",
+            "certificate_hash": "270f2449a928070382d550b90553d28230353780"
+          }
+        },
+        {
+          "client_id": "878919117244-3fi15s27ee5ijehd5d353vb6012h4ppb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3vuswf7IGFbhUT-M0BsFmAtgVzQxtwUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878919117244-3fi15s27ee5ijehd5d353vb6012h4ppb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
